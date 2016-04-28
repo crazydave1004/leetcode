@@ -10,6 +10,7 @@ public class Solution {
             while (left < right) {
                 int tmp = nums[left] + nums[right];
                 if (tmp == target) {
+                    //Arrays.asList() converts array to arraylist
                     res.add(Arrays.asList(nums[i], nums[left], nums[right]));
                     left++;
                     right--;
